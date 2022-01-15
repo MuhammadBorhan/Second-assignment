@@ -83,23 +83,28 @@ nav.navigation {
     font-size: 15px;
     font-weight: 700;
     display: inline-block;
-    transition: .4s linear;
+    transition: .3s;
 }
 .header-left a:hover {
-    background-color: rgb(253 15 119 / 71%);
-    color: rgb(234 235 239 / 97%);
+    background-color: #E02C6D;
+    color: white;
 }
 .header-left a span {
     margin-left: 10px;
 }
 .header-right {
     width: 50%;
+    overflow: hidden;
 }
 .header-right img {
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: auto;
     object-fit: cover;
-    margin:0 120px;
+    margin: 0 120px;
+    transition: transform .4s;
+}
+.header-right:hover img{
+    transform: scale(1.2);
 }
 
 
@@ -263,7 +268,7 @@ a.banner-button span {
           Menu Item Section
    --------------------------*/
    footer {
-    background-color: blueviolet;
+    background-color: #0A0826;
     color: white;
     padding: 20px 0;
     width: 960px;
@@ -273,7 +278,7 @@ a.banner-button span {
     font-size: 25px;
     color: white;
     margin: 0 10px;
-    background-color: #808080b3;
+    background-color: #80808042;
     display: inline-block;
     padding: 5px 10px;
     width: 45px;
