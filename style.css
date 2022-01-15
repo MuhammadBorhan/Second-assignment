@@ -38,7 +38,7 @@ nav.navigation {
 }
 .nav-menu ul li {
     display: inline-block;
-    padding: 0 15px;
+    padding: 0 10px;
 }
 .nav-menu ul li:last-child{
     padding-right: 0;
@@ -71,7 +71,7 @@ nav.navigation {
 .header-left p {
     font-size: 18px;
     font-weight: 500;
-    margin: 15px 0;
+    margin: 20px 0;
     color: darkolivegreen;
 }
 .header-left a {
@@ -250,6 +250,7 @@ a.banner-button span {
     border-radius: 10px;
     display: block;
     transition: .3s linear ;
+    text-align: center;
 }
 .Item:hover .access-button a{
     background-color: blue;
@@ -397,8 +398,9 @@ a.banner-button span {
     text-align: center;
     display: inline-block;
 }
-.header-left{
+.header-left {
     width: 100%;
+    text-align: center;
 }
 .header-right{
     width: 100%;
