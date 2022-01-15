@@ -7,6 +7,7 @@
 *{
     margin:0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
     font-family: 'Poppins', sans-serif;
@@ -49,6 +50,11 @@ nav.navigation {
 }
 
 
+
+
+/* --------------------------- 
+         Header Section
+   --------------------------*/
 .header-section {
     display: flex;
     align-items: center;
@@ -95,3 +101,326 @@ nav.navigation {
     object-fit: cover;
     margin:0 120px;
 }
+
+
+
+/* --------------------------- 
+          Logo Section
+   --------------------------*/
+   .logos {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+    border-top: 2px solid gainsboro;
+    border-bottom: 2px solid gainsboro;
+    margin: 30px 0;
+    align-items: center;
+}
+
+
+
+
+/* --------------------------- 
+          Banner Section
+   --------------------------*/
+   .banner-section {
+    margin-bottom: 50px;
+}
+   h2.banner-title {
+    font-size: 30px;
+    text-align: center;
+    padding: 35px 0;
+    font-weight: 800;
+}
+   .banner-items {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+}
+article.banner {
+    padding: 15px;
+    box-shadow: 0px 2px 14px;
+    border-radius: 8px;
+}
+.author-img img {
+    width: 100%;
+    height: 200px;
+}
+.author-info {
+    font-size: 25px;
+    padding: 15px 0px;
+    line-height: 40px;
+}
+.author-icon {
+    color: gold;
+    float: left;
+    margin-right: 25px;
+}
+.author-icon i {
+    font-size: 14px;
+    margin-right: 5px;
+}
+.author-rate h3 {
+    color: gray;
+    font-weight: 600;
+}
+.rate-info {
+    padding: 15px 0px;
+    line-height: 26px;
+}
+.rate-info h3 {
+    font-size: 18px;
+    color: gray;
+}
+.rate-info p {
+    font-size: 18px;
+    color: gray;
+}
+a.banner-button {
+    float: right;
+    display: block;
+    padding: 35px 0px;
+    text-decoration: none;
+    color: tomato;
+}
+a.banner-button span {
+    margin-left: 10px;
+}
+
+
+
+/* --------------------------- 
+          Menu Item Section
+   --------------------------*/
+   .items-title {
+    text-align: center;
+    padding: 30px 0;
+}
+.items-title h5 {
+    font-size: 15px;
+    color: grey;
+    font-weight: 700;
+}
+.Items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+.Item {
+    margin: 0 15px;
+    box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%);
+    padding: 30px;
+    width: 300px;
+}
+.Item h2 {
+    font-size: 22px;
+}
+.Item h5 {
+    font-size: 16px;
+    color: grey;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+.Item ul {
+    list-style: none;
+}
+.Item ul li {
+    padding: 5px 0;
+    color: darkblue;
+    font-weight: 500;
+}
+.Item ul li span {
+    width: 25px;
+    display: inline-block;
+    color: blue;
+    font-size: 20px;
+}
+.access-button {
+    width: 160px;
+    margin: 20px auto;
+}
+.access-button a {
+    box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%);
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    color: #0072ff;
+    padding: 12px 10px;
+    border-radius: 10px;
+    display: block;
+    transition: .3s linear ;
+}
+.Item:hover .access-button a{
+    background-color: blue;
+    color: white;
+}
+
+
+
+/* --------------------------- 
+          Menu Item Section
+   --------------------------*/
+   footer {
+    background-color: blueviolet;
+    color: white;
+    padding: 20px 0;
+    width: 960px;
+    text-align: center;
+}
+.footer-icon a {
+    font-size: 25px;
+    color: white;
+    margin: 0 10px;
+    background-color: #808080b3;
+    display: inline-block;
+    padding: 5px 10px;
+    width: 45px;
+    height: 45px;
+    border-radius: 25px;
+    margin-top: 15px;
+}
+
+
+
+/* --------------------------------------- 
+         Media Query for Smart Phone
+   ---------------------------------------*/
+   @media only screen and (max-width:480px){
+       .container{
+            width: 100%;
+       }
+       
+       .navigation{
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+       }
+       .nav-menu ul{
+           display: flex;
+           flex-direction: column;
+       }
+       .nav-menu ul li a {
+        margin-bottom: 10px;
+        display: block;
+        border: 1px solid gray;
+        padding: 5px 0px;
+        text-align: center;
+        width: 100px;
+        border-radius: 25px;
+    }
+       .header-section{
+           display: flex;
+           align-items: center;
+           flex-direction: column-reverse;
+       }
+       .header-left{
+           width: 100%;
+       }
+       .header-left h1 {
+        margin: 15px 0;
+        text-align: center;
+    }
+    .header-left p {
+        margin-bottom: 25px;
+        text-align: center;
+    }
+    .header-left a {
+        width: 100%;
+        text-align: center;
+    }
+       .header-right{
+           width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+       }
+       .header-right img{
+           width: 200px;
+           height: 200px;
+       }
+       .logos{
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+       }
+       .logo{
+           margin-bottom: 20px;
+       }
+       .banner-items{
+           display: flex;
+           flex-direction: column;
+       }
+       .Items{
+           display: flex;
+           flex-direction:column;
+       }
+       .Item{
+           margin-bottom: 30px;
+       }
+
+       footer{
+        width: 100%;
+    }
+}  
+
+
+
+/* --------------------------------------- 
+         Media Query for Tablets
+   ---------------------------------------*/
+   @media only screen and (min-width:481px) and (max-width:768px){
+    .container{
+        width: 100%;
+   }
+   .navigation{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+   }
+   .nav-menu ul{
+    display: grid;
+    grid-template-columns: 100px 100px;
+}
+
+.header-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+}
+.header-left p {
+
+    margin: 25px 0;
+}
+.header-left a {
+    text-align: center;
+    display: inline-block;
+}
+.header-left{
+    width: 100%;
+}
+.header-right{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px 10px;
+    justify-items: center;
+}
+.banner-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 35px;
+    justify-content: center;
+}
+
+footer{
+    width: 100%;
+}
+
+   }
