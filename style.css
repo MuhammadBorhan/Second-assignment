@@ -31,7 +31,7 @@ main{
 nav.navigation {
     display: flex;
     justify-content: space-between;
-    padding: 30px 0;
+    padding: 50px 0;
 }
 .nav-menu ul {
     list-style: none;
@@ -118,7 +118,7 @@ nav.navigation {
     padding: 25px 0;
     border-top: 2px solid gainsboro;
     border-bottom: 2px solid gainsboro;
-    margin: 30px 0;
+    margin: 60px 0 10px 0;
     align-items: center;
 }
 
@@ -195,7 +195,7 @@ a.banner-button span {
 
 
 /* --------------------------- 
-          Menu Item Section
+          Price Item Section
    --------------------------*/
    .items-title {
     text-align: center;
@@ -265,7 +265,7 @@ a.banner-button span {
 
 
 /* --------------------------- 
-          Menu Item Section
+          Footer Section
    --------------------------*/
    footer {
     background-color: #0A0826;
@@ -289,6 +289,8 @@ a.banner-button span {
 
 
 
+
+
 /* --------------------------------------- 
          Media Query for Smart Phone
    ---------------------------------------*/
@@ -297,6 +299,9 @@ a.banner-button span {
             width: 100%;
        }
        
+
+       /* Navigation menu */
+
        .navigation{
            display: flex;
            flex-direction: column;
@@ -315,6 +320,11 @@ a.banner-button span {
         width: 100px;
         border-radius: 25px;
     }
+
+
+
+             /* header Section */
+
        .header-section{
            display: flex;
            align-items: center;
@@ -345,6 +355,12 @@ a.banner-button span {
            width: 200px;
            height: 200px;
        }
+
+
+
+
+       /* differrent companies Logos  */
+
        .logos {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -353,6 +369,12 @@ a.banner-button span {
        .logo{
            margin-bottom: 20px;
        }
+
+
+
+
+       /* Banner Section */
+
        .banner-items{
            display: flex;
            flex-direction: column;
@@ -365,10 +387,15 @@ a.banner-button span {
            margin-bottom: 30px;
        }
 
+
+
+       /* Footer Section */
+
        footer{
         width: 100%;
     }
 }  
+
 
 
 
@@ -379,6 +406,10 @@ a.banner-button span {
     .container{
         width: 100%;
    }
+
+
+   /* Navigation menu */
+
    .navigation{
        display: flex;
        flex-direction: column;
@@ -388,6 +419,11 @@ a.banner-button span {
     display: grid;
     grid-template-columns: 100px 100px;
 }
+
+
+
+
+ /* header Section */
 
 .header-section{
     display: flex;
@@ -413,12 +449,22 @@ a.banner-button span {
     justify-content: center;
     align-items: center;
 }
+
+
+
+
+/* differrent companies Logos  */
+
 .logos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 40px 10px;
     justify-items: center;
 }
+
+
+
+ /* Banner Section */
 .banner-items {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -426,6 +472,11 @@ a.banner-button span {
     justify-content: center;
 }
 
+
+
+
+
+/* Footer Section */
 footer{
     width: 100%;
 }
